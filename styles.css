@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Melted Monster', cursive;
+    color: white;
+    background-color: black;
+}
+
+canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1, h2 {
+    text-align: center;
+    color: orange;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    transition: transform 0.2s;
+}
+
+ul li:hover {
+    transform: scale(1.05);
+}
+
+blockquote {
+    text-align: center;
+    font-style: italic;
+    margin: 20px 0;
+    color: lightgrey;
+}
+
+.door {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.door a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orange;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.door a:hover {
+    background-color: darkorange;
+    transform: scale(1.05);
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
